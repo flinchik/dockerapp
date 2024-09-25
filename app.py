@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello, Docker on DigitalOcean App Platform!"
+    return render_template('index.html')
 
 @app.route('/status')
 def status():
